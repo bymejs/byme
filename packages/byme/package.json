@@ -4,13 +4,16 @@
   "description": "byme",
   "homepage": "https://github.com/bymejs/byme/tree/master/packages/byme#readme",
   "bugs": "https://github.com/bymejs/byme/issues",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "byme": "bin/byme.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bymejs/byme"
   },
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -20,5 +23,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@umijs/core": "^4.1.1",
+    "@umijs/utils": "^4.1.1"
   }
 }

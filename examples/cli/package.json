@@ -1,0 +1,10 @@
+{
+  "name": "@example/cli",
+  "private": true,
+  "scripts": {
+    "start": "byme version"
+  },
+  "dependencies": {
+    "byme": "workspace:*"
+  }
+}
