@@ -1,8 +1,8 @@
 {
-  "name": "byme",
+  "name": "@bymejs/plugin-bundler",
   "version": "0.0.0",
-  "description": "byme",
-  "homepage": "https://github.com/bymejs/byme/tree/master/packages/byme#readme",
+  "description": "@bymejs/plugin-bundler",
+  "homepage": "https://github.com/bymejs/byme/tree/master/packages/plugin-bundler#readme",
   "bugs": "https://github.com/bymejs/byme/issues",
   "repository": {
     "type": "git",
@@ -11,9 +11,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "byme": "bin/byme.js"
-  },
   "files": [
     "dist"
   ],
@@ -22,10 +19,8 @@
     "dev": "father dev"
   },
   "dependencies": {
-    "@umijs/bundler-utils": "^4.1.1",
-    "@umijs/core": "^4.1.1",
     "@umijs/utils": "^4.1.1",
-    "express": "^4.18.2"
+    "byme": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
