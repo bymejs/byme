@@ -1,0 +1,23 @@
+{
+  "name": "byme",
+  "version": "0.0.0",
+  "description": "Assembled Umi",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "esno scripts/bootstrap.ts",
+    "build": "pnpm -rc exec pnpm run build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@umijs/utils": "^4.1.1",
+    "esno": "^4.0.0",
+    "father": "^4.4.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.10",
+    "zx": "^7.2.3"
+  }
+}
