@@ -1,7 +1,7 @@
 export const MIN_NODE_VERSION = 14;
 export const DEFAULT_CONFIG_FILES = [
-  '.byme.ts',
-  '.byme.js',
+  '.bymerc.ts',
+  '.bymerc.js',
   'config/config.ts',
   'config/config.js',
 ];

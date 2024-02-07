@@ -2,9 +2,10 @@
   "name": "@example/cli",
   "private": true,
   "scripts": {
-    "start": "byme version"
+    "start": "byme dev"
   },
   "dependencies": {
+    "@bymejs/plugin-bundler": "workspace:*",
     "byme": "workspace:*"
   }
 }

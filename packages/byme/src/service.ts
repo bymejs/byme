@@ -24,7 +24,10 @@ export class Service extends CoreService {
       frameworkName: FRAMEWORK_NAME,
       // 都为空
       presets: [],
-      plugins: [].filter(Boolean),
+      plugins: [
+        require.resolve('./configPlugins/configPlugins'),
+        require.resolve('./registerMethods'),
+      ].filter(Boolean),
     });
   }
 
