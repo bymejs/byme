@@ -3,6 +3,7 @@ import {
   checkVersion as checkNodeVersion,
   deepmerge,
   logger,
+  printHelp,
   setNoDeprecation,
   setNodeTitle,
   yParser,
@@ -60,7 +61,8 @@ export async function run(_opts?: IOpts) {
       process.on('message', listener);
     }
   } catch (e: any) {
-    logger.error(e);
+    logger.fatal(e);
+    printHelp.exit();
     process.exit(1);
   }
 }

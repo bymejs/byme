@@ -1,8 +1,6 @@
 import { join } from 'path';
 
-const hookPropertyMap = new Map([
-  ['byme', join(__dirname, '../index.js')],
-]);
+const hookPropertyMap = new Map([['byme', join(__dirname, '../index.js')]]);
 
 const mod = require('module');
 const resolveFilename = mod._resolveFilename;
